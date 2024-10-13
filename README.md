@@ -2,6 +2,9 @@
 AI generated RAP application with Joule and me in ADT :).
 
 ## Joule was instructed with the following text:
+![image](https://github.com/user-attachments/assets/d56183e5-01ca-4918-a6b2-17fc6d9141e3)
+![image](https://github.com/user-attachments/assets/f5ed0285-727d-4cf6-acbd-7b3900ead066)
+![image](https://github.com/user-attachments/assets/6e22982a-acc5-4d53-b5c8-e627fc10bdcc)
 
 Generate an application for managing agencies. 
 The agency entity is the root and requires the fields agency_id, agency_name, street, postal_code, city, 
