@@ -1,0 +1,41 @@
+projection implementation in class ZBP_C_AGENCYATY unique;
+strict ( 2 );
+use draft;
+define behavior for ZC_AGENCYATY alias Agency
+use etag
+
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+
+  use association _Employees { create; with draft; }
+}
+
+define behavior for ZC_EMPLOYEESATY alias Employees
+use etag
+
+{
+  use update;
+  use delete;
+
+  use association _Agency { with draft; }
+  use association _Assets { create; with draft; }
+}
+
+define behavior for ZC_ASSETSATY alias Assets
+use etag
+
+{
+  use update;
+  use delete;
+
+  use association _Agency { with draft; }
+  use association _Employees { with draft; }
+}
