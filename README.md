@@ -15,3 +15,8 @@ The database table name for agency must be zagentatx
 Create a child entity under agency called employees including fields employee_name and work_years.
 Create a child entity under employees called assets. Include fields id and name.
 Create the object names with the suffix 'ATX'.
+
+## Expectations on 13.Nov.2024
+
+I want either RAP generator to be able to generate RAP BOs with more than 3 hierarchy levels based on my DB tables, or Joule be context aware and tell: please take these tables and generate the service.
+Also code completion via comments taking samples from a codebase trained by SAP and stored on BTP accessed by the copliot service. Our demand is that we want to train copilot with our projects codebase and instruct creating validations like validation A in BO B.
